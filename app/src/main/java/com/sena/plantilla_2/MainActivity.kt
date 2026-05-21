@@ -30,6 +30,10 @@ import androidx.compose.ui.unit.sp
 import com.sena.plantilla_2.ui.theme.Plantilla_2Theme
 import com.sena.plantilla_2.ui.theme.*
 import androidx.compose.material.icons.filled.*
+import androidx.compose.foundation.Image
+import androidx.compose.ui.res.painterResource
+import com.sena.plantilla_2.R
+
 
 // COLORES
 val PurplePrimary = Color(0xFF4A148C)
@@ -137,11 +141,10 @@ fun IllustrationSection() {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
-            Icon(
-                imageVector = Icons.Default.List,
-                contentDescription = null,
-                tint = PurplePrimary,
-                modifier = Modifier.size(80.dp)
+            Image(
+                painter = painterResource(id = R.drawable.checklist),
+                contentDescription = "Checklist",
+                modifier = Modifier.size(180.dp)
             )
 
             Spacer(modifier = Modifier.height(8.dp))
